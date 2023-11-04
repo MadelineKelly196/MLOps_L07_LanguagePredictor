@@ -36,13 +36,13 @@
     <script>
         document.getElementById("predict-lang-button").addEventListener("click", function () {
             // Get form data
-            const Input_Lang = ""
+            const Input_Lang = document.getElementById("lang").value;
         
             // Prepare data as an object
             const data = {
-                Input_Lang
+                Input_Lang: Input_Lang
             };
-            
+            console.log(data);
             // Make an HTTP POST request to a hypothetical server
             // fetch("https://language-prediction-service.onrender.com/predict", {
             
